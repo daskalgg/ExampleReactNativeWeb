@@ -1,0 +1,117 @@
+{
+  "tree": {
+    "_1t7zysh11": {
+      "id": "1t7zysh11",
+      "role": "Καλλιέργιες",
+      "mcs": {},
+      "ci": {
+        "id": "irrigation-rpi-dragino",
+        "mcId": "_1t7zysh1y",
+        "protocol": "lora"
+      },
+      "devs": [
+        {
+          "id": "_2ne9m9iq3",
+          "title": "relay_valve",
+          "specification": {
+            "id": "_u9n384q59",
+            "options": [],
+            "title": "relay_valve",
+            "type": "relay_valve",
+            "role": "out"
+          },
+          "role": "out",
+          "mcId": "_1t7zysh1y",
+          "io": "33"
+        },
+        {
+          "id": "_4eavuraty",
+          "title": "flowmeter",
+          "specification": {
+            "id": "_pjrdq4t7z",
+            "options": ["mSec", "uSec"],
+            "title": "flowmeter",
+            "type": "flowmeter",
+            "role": "in"
+          },
+          "role": "in",
+          "mcId": "_1t7zysh1y",
+          "io": "31"
+        },
+        {
+          "id": "_ql3suepea",
+          "title": "flowmeter",
+          "specification": {
+            "id": "_pjrdq4t7z",
+            "options": ["mSec", "uSec"],
+            "title": "flowmeter",
+            "type": "flowmeter",
+            "role": "in"
+          },
+          "role": "in",
+          "mcId": "_1t7zysh1y",
+          "io": "38"
+        },
+        {
+          "id": "_qavomgyzi",
+          "title": "relay_valve",
+          "specification": {
+            "id": "_u9n384q59",
+            "options": [],
+            "title": "relay_valve",
+            "type": "relay_valve",
+            "role": "out"
+          },
+          "role": "out",
+          "mcId": "_1t7zysh1y",
+          "io": "35"
+        },
+        {
+          "id": "_tl20v1cyl",
+          "title": "dht",
+          "specification": {
+            "id": "_56bzzxgyh",
+            "options": ["uSec"],
+            "title": "dht",
+            "type": "dht",
+            "role": "in"
+          },
+          "role": "in",
+          "mcId": "_1t7zysh1y",
+          "io": "21"
+        }
+      ],
+      "op": "_9tnmlouz7",
+      "point": ["_id"],
+      "devGroup": {
+        "id": "ir",
+        "title": "irrigator",
+        "task": "irrigation",
+        "devices": {
+          "21": "dht",
+          "31": "flowmeter",
+          "33": "relay_valve",
+          "35": "relay_valve",
+          "38": "flowmeter"
+        }
+      },
+      "active": true,
+      "alive": false,
+      "parent_mc_id": null
+    }
+  },
+  "points": [
+    {
+      "id": "_id",
+      "type": "collector",
+      "title": "Ελιες",
+      "location": {
+        "coordinates": [35.3092111276508, 25.10846877010192],
+        "type": "Point"
+      },
+      "root": {},
+      "parent": "",
+      "childrens": []
+    }
+  ]
+}
